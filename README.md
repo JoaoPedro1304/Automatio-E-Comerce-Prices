@@ -1,3 +1,6 @@
+# Automated E-Commerce Price Comparison Tool
+Automation project to compare prices of the same products across different websites.
+
 <h3>Executando o projeto:</h3>
     
     1. Criar Virtual Enviroent (venv):
