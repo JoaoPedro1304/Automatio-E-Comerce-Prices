@@ -9,5 +9,5 @@ from sqlalchemy.orm import sessionmaker
 def create_engine_db(connectionString: str):
     return create_engine(connectionString)
 
-def create_session_factory(engine):
+def create_session(engine):
     return sessionmaker(bind=engine)
