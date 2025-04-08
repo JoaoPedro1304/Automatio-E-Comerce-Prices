@@ -54,7 +54,7 @@ This project aims to automate price comparison across different e-commerce websi
     ```
 5. Configure Environment Variables:
     Create a .env file to store database credentials and other sensitive settings.
-    Use the example file as a reference: [.env_example](./.env_example)
+    Use the example file as a reference: [.env_example](./env_example.txt)
 
 6. Start the Database Container
     Run Docker Compose to spin up the PostgreSQL container:
