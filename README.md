@@ -40,7 +40,7 @@ Este projeto tem como objetivo automatizar a comparação de preços entre difer
         python3 -m venv NOME-DA-VENV
     ```
 3. Comando para ativar a venv:
-    Windows :
+    Windows:
     ```Shell
         NOME-DA-VENV\Scripts\activate
     ``` 
