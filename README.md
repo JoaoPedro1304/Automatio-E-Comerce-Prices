@@ -1,5 +1,7 @@
 # E-Commerce Price Comparison Tool
 
+[English RAEDME](./README-en.md)
+
 Este projeto tem como objetivo automatizar a comparação de preços entre diferentes sites de e-commerce.
 
 ## Tecnologias utilizadas
