@@ -56,7 +56,7 @@ Este projeto tem como objetivo automatizar a comparação de preços entre difer
 
 5. Configue variáveis de ambiente:
     Criar um arquivo .env para armazenar as variáveis do banco de dados e outras variáveis de ambiente sensíveis.
-    exemplo do .env no arquivo [.env_example](./.env_example)
+    exemplo do .env no arquivo [.env_example](./env_example.txt)
 
 6. Iniciar container do banco de dados:
     Executar docker-compose para subir o container do banco:
