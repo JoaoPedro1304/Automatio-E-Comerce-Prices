@@ -23,8 +23,8 @@ Este projeto tem como objetivo automatizar a comparação de preços entre difer
 ## Como executar o projeto:
     
 1. Clone o projeto:
-    ```Shel
-        git clone https://github.com/JoaoPedro1304/Automatio-E-Comerce-Prices.git
+    ```Shell
+    git clone https://github.com/JoaoPedro1304/Automatio-E-Comerce-Prices.git
     ```
 
 2. Criar Virtual Enviroent (venv):
@@ -33,25 +33,27 @@ Este projeto tem como objetivo automatizar a comparação de preços entre difer
     ```
     *No Windows, se python for um comando não reconhecido utilize py:
     ```Shell
-        py -m venv NOME-DA-VENV
+     py -m venv NOME-DA-VENV
     ```
     *No linux no caso de não reconhecer python utilize python3: 
     ```Shell
-        python3 -m venv NOME-DA-VENV
+    python3 -m venv NOME-DA-VENV
     ```
+
 3. Comando para ativar a venv:
     Windows:
     ```Shell
-        NOME-DA-VENV\Scripts\activate
+    NOME-DA-VENV\Scripts\activate
     ``` 
+    Linux :
     ```Shell
-        Linux : source NOME-DA-VENV/bin/activate
+    source NOME-DA-VENV/bin/activate
     ```
 
 4. Instalar dependencias:
     Com a venv ativada instale as dependecias do arquivo requirements.txt
     ```Shell
-        pip install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 5. Configue variáveis de ambiente:
@@ -61,6 +63,6 @@ Este projeto tem como objetivo automatizar a comparação de preços entre difer
 6. Iniciar container do banco de dados:
     Executar docker-compose para subir o container do banco:
     ```Shel
-        docker-compose up -d
+    docker-compose up -d
     ```
 
