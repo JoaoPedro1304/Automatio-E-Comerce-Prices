@@ -1,14 +1,17 @@
-from database.db_connection import create_engine_db, create_session
+from database.db_abstraction import Db_Abstraction
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+class Postgres_Connectcion:
 
-connectionString = os.getenv('CONNECTION_STRING')
-
-engine = create_engine_db(connectionString)
-
-Session = create_session(engine)
-
-def get_session():
-    return Session()
+    def __init__(self):
+        pass
+    
+    load_dotenv()
+    
+    connection_string = os.getenv('CONNECTION_STRING')
+    
+    Session = Db_Abstraction(connection_string).get_session()
+    
+    def get_session(self):
+        return self.Session    

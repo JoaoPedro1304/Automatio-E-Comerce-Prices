@@ -5,9 +5,12 @@ from sqlalchemy.orm import sessionmaker
 # Em vez de depender diretamente de uma tecnologia específica, a lógica de negócio depende de uma abstração,
 # permitindo que diferentes implementações (como PostgreSQL, MySQL, etc.)sejam injetadas conforme necessário.
 
- 
-def create_engine_db(connectionString: str):
-    return create_engine(connectionString)
+class Db_Abstraction:
 
-def create_session(engine):
-    return sessionmaker(bind=engine)
+    def __init__(self, connection_string : str):
+
+        self.engine = create_engine(connection_string)
+        self.Session = sessionmaker(bind=self.engine)
+
+    def get_session(self):
+        return self.Session

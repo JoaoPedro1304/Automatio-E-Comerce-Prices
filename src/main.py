@@ -3,8 +3,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from model.ProductModel import Base, Produto
-from database.postgres_connection import get_session, engine
+from model.ProductModel import Produto
+from database.postgres_connection import Postgres_Connectcion 
 import json
 
 
@@ -19,14 +19,15 @@ def start_driver():
 
 def save_products_database(url,site_name,product_name, product_price):
     
-    # session = get_session()
-    # Base.metadata.create_all(engine)
-    # try:
-    #     session.add(Produto(url=url, site_name=site_name, product_name=product_name, price=product_price))
-    # except Exception as error:
-    #     print(f'Error:{error}')
+    Session = Postgres_Connectcion.get_session()
+    try:
+        Session.add(Produto(url=url, site_name=site_name, product_name=product_name, price=product_price))
 
-    #Testando
+    except Exception as error:
+
+        print(f'Error:{error}')
+
+    #Log
     print(url,site_name,product_name, product_price)
 
 def get_products(url,site_name, product_selector, price_selector, price_fraction_selector):
