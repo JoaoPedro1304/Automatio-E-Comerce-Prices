@@ -1,13 +1,11 @@
 from database.db_abstraction import Db_Abstraction
-from model.ProductModel import Base
-from dotenv import load_dotenv
+from model.product_model import Base
 import os
 
-class Postgres_Connectcion:
+class Postgres_Connection:
 
-    def __init__(self):
-
-        load_dotenv()
+    def __init__(self):        
+        #load_dotenv()
         connection_string = os.getenv('CONNECTION_STRING')
         self.db = Db_Abstraction(connection_string)
         
